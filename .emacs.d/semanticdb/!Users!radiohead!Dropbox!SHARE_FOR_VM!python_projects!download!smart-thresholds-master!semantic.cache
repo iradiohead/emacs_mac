@@ -1,0 +1,83 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-bsdmake-mode
+      :tags 
+        '( ("make" function nil nil [1 45])
+            ("clean" function nil nil [46 67]))          
+      :file "Makefile"
+      :pointmax 67
+      :fsize 66
+      :lastmodtime '(21476 23740 0 0)
+      :unmatched-syntax '((shell-command 61 . 66) (bol 60 . 60)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("PIL" include nil nil [1 22])
+            ("sys" include nil nil [23 37])
+            ("os" include nil nil [23 37])
+            ("numpy" include nil nil [38 56])
+            ("basic_threshold" include nil nil [57 85])
+            ("'''
+file_name = \"images/kidney.jpg\"
+
+try:
+  img = Image.open(file_name)
+  img.load()
+  img.show()
+  bw = img.convert('L')
+  #bw.show()
+except IOError:
+  print \"Unable to open file. Please try another format.\"
+'''" code nil nil [87 299])
+            ("'''
+grayscale_array = []
+for w in range(0,bw.size[0]):
+  for h in range(0,bw.size[1]):
+    intensity = bw.getpixel((w,h))
+    grayscale_array.append(intensity)
+
+total_pixels = bw.size[0] * bw.size[1]
+bins = range(0,257)
+img_histogram = np.histogram(grayscale_array, bins)
+'''" code nil nil [300 575])
+            ("total_pix" function (:arguments 
+              ( ("image" variable nil (reparse-symbol function_parameters) [590 595]))              ) nil [576 651])
+            ("histogramify" function (:arguments 
+              ( ("image" variable nil (reparse-symbol function_parameters) [669 674]))              ) nil [652 999])
+            ("otsu" function (:arguments 
+              ( ("image" variable nil (reparse-symbol function_parameters) [1010 1015]))              ) nil [1001 1716])
+            ("'''
+thresh =  otsu(img_histogram, total_pixels)
+print thresh
+bt.threshold(thresh, bw) 
+'''" code nil nil [1718 1808]))          
+      :file "otsu.py"
+      :pointmax 1809
+      :fsize 1808
+      :lastmodtime '(21476 23740 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "basic_threshold.py"
+      :fsize 835
+      :lastmodtime '(21476 23740 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("basic_threshold" include nil nil [1 29])
+            ("otsu" include nil nil [30 41])
+            ("PIL" include nil nil [43 64])
+            ("sys" include nil nil [65 79])
+            ("os" include nil nil [65 79])
+            ("try" code nil nil [81 343]))          
+      :file "main.py"
+      :pointmax 347
+      :fsize 346
+      :lastmodtime '(21476 23740 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!radiohead!Dropbox!SHARE_FOR_VM!python_projects!DOWNLOAD!smart-thresholds-master!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

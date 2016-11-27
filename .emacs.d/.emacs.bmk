@@ -1,0 +1,95 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("digital_image_process"
+ (filename . "~/Dropbox/code/digital_image_process/")
+ (front-context-string . ".DS_Store\n  drwx")
+ (rear-context-string . "148 11 22 20:21 ")
+ (position . 267))
+("temp.txt"
+ (filename . "~/Dropbox/emacs_docs/temp.txt")
+ (front-context-string . "1.	Ethical busin")
+ (rear-context-string)
+ (position . 1))
+("python_projects"
+ (filename . "~/Dropbox/SHARE_FOR_VM/python_projects/")
+ (front-context-string)
+ (rear-context-string . "154 10  6 16:56 ")
+ (position . 262))
+("SHARE_FOR_VM"
+ (filename . "~/Dropbox/SHARE_FOR_VM/")
+ (front-context-string . "C_C++_projects\n ")
+ (rear-context-string . "68 Jul 31 18:12 ")
+ (position . 231))
+("test_cpp"
+ (filename . "~/Dropbox/SHARE_FOR_VM/C_C++_projects/test_cpp/")
+ (front-context-string)
+ (rear-context-string . "Jul 31 18:12 ..\n")
+ (position . 201))
+("pointeronc_1"
+ (filename . "~/Dropbox/SHARE_FOR_VM/C_C++_projects/pointeronc_1/")
+ (front-context-string)
+ (rear-context-string . "40 Jul 31 16:28 ")
+ (position . 256))
+("jk-basic-config.el"
+ (filename . "~/.emacs.d/elisp/jk-basic-config.el")
+ (front-context-string . ";; 设置背景颜色和字体颜色\n(")
+ (rear-context-string)
+ (position . 1))
+("git.org"
+ (filename . "~/Dropbox/emacs_docs/git.org")
+ (front-context-string . "#+TITLE: GIT GUI")
+ (rear-context-string)
+ (position . 1))
+("LINUX-UNIX"
+ (filename . "~/Dropbox/personal/PROGRAMMING BOOKS/LINUX-UNIX/")
+ (front-context-string . "Advanced Program")
+ (rear-context-string . "39 May 20  2014 ")
+ (position . 275))
+("MyNotes.org"
+ (filename . "~/Dropbox/emacs_docs/tutorial_mine/MyNotes.org")
+ (front-context-string . "\n* help\nc-h k c-")
+ (rear-context-string . "STARTUP: indent\n")
+ (position . 19))
+("elisp"
+ (filename . "~/.emacs.d/elisp/")
+ (front-context-string . "New Folder\n  drw")
+ (rear-context-string . "96 Jul 15 09:32 ")
+ (position . 230))
+(".emacs"
+ (filename . "~/.emacs")
+ (front-context-string . ";;设置你的全名和邮件，在发邮件")
+ (rear-context-string)
+ (position . 1))
+("redhat7_note.org"
+ (filename . "~/Dropbox/emacs_docs/redhat7_note.org")
+ (front-context-string . "* dropbox\n~/.dro")
+ (rear-context-string)
+ (position . 1))
+("tutorial_mine"
+ (filename . "~/Dropbox/emacs_docs/tutorial_mine/")
+ (front-context-string . "Chinese-GB.tut\n ")
+ (rear-context-string . "74 Jul 16 12:59 ")
+ (position . 327))
+("emacs_docs"
+ (filename . "~/Dropbox/emacs_docs/")
+ (front-context-string . "2016_sprint_todo")
+ (rear-context-string . "16 Jul 11 19:27 ")
+ (position . 230))
+("Documents"
+ (filename . "~/Documents/")
+ (front-context-string)
+ (rear-context-string . "Jul 15 09:37 ..\n")
+ (position . 172))
+("Desktop"
+ (filename . "~/Desktop/")
+ (front-context-string . ".emacs.d\n  drwx-")
+ (rear-context-string . "96 Feb  5  2015 ")
+ (position . 286))
+("~"
+ (filename . "~/")
+ (front-context-string . "..\n  -rw-------.")
+ (rear-context-string . "34 Jul 13 15:07 ")
+ (position . 160))
+)

@@ -1,0 +1,52 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+1: calculate the average value for each channel of each pixel ,get result M
+2: remove means for each channel of pixel,get the result
+3: multiply contrast ratio to above result, get P
+4: p + M * brightness ratio
+\"\"\"" code nil nil [47 265])
+            ("cv2" include nil nil [267 283])
+            ("numpy" include nil nil [284 296])
+            ("getContrast" function nil nil [365 399])
+            ("getBrightness" function nil nil [400 434])
+            ("clamp" function (:arguments 
+              ( ("value" variable nil (reparse-symbol function_parameters) [446 451]))              ) nil [435 586])
+            ("image" variable nil nil [609 692])
+            ("print" code nil nil [693 710])
+            ("print" code nil nil [726 743])
+            ("print" code nil nil [759 776])
+            ("red_sum" variable nil nil [812 823])
+            ("green_sum" variable nil nil [824 837])
+            ("blue_sum" variable nil nil [838 850])
+            ("for" code nil nil [851 1024])
+            ("total" code nil nil [1025 1062])
+            ("rgbmeans" variable nil nil [1063 1081])
+            ("rgbmeans" variable nil nil [1082 1118])
+            ("rgbmeans" variable nil nil [1120 1158])
+            ("rgbmeans" variable nil nil [1160 1197])
+            ("print" code nil nil [1199 1216])
+            ("print" code nil nil [1217 1234])
+            ("print" code nil nil [1235 1252])
+            ("tr" variable nil nil [1296 1302])
+            ("tg" variable nil nil [1303 1309])
+            ("tb" variable nil nil [1310 1316])
+            ("out_img" variable nil nil [1317 1364])
+            ("for" code nil nil [1365 2021])
+            ("cv" code nil nil [2022 2050])
+            ("cv" code nil nil [2051 2081])
+            ("cv" code nil nil [2117 2130]))          
+      :file "contrast.py"
+      :pointmax 2131
+      :fsize 2130
+      :lastmodtime '(22540 35891 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!radiohead!Dropbox!SHARE_FOR_VM!python_projects!contrast!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

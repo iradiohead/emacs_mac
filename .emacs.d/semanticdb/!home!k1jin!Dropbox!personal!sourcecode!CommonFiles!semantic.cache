@@ -1,0 +1,43 @@
+;; Object CommonFiles/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "CommonFiles/"
+  :tables (list 
+   (semanticdb-table "ArcFileMap.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("AFX_ARCFILEMAP_H__36284B84_542C_462B_8BB9_A1EAEAA9DF41__INCLUDED_" variable (:constant-flag t) nil [218 283])
+            ("DRCommon.h" include nil nil [348 369])
+            ("CArcFileMapping" variable (:type ("DRCOMMON_API" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [373 933]))          
+    :file "ArcFileMap.h"
+    :pointmax 1021
+    :fsize 1020
+    :lastmodtime '(18862 15040 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("AFX_ARCFILEMAP_H__36284B84_542C_462B_8BB9_A1EAEAA9DF41__INCLUDED_")
+          )
+
+    )
+   (semanticdb-table "DRCommon.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("DRCOMMON_API" variable (:constant-flag t) nil [650 662])
+            ("Carbon/Carbon.h" include (:system-flag t) nil [721 747]))          
+    :file "DRCommon.h"
+    :pointmax 755
+    :fsize 777
+    :lastmodtime '(18862 15040 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DRCOMMON_API")
+          )
+
+    )
+   )
+  :file "!home!k1jin!Dropbox!personal!sourcecode!CommonFiles!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

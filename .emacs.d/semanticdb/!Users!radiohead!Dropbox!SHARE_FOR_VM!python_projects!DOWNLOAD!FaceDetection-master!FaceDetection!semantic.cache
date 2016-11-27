@@ -1,0 +1,111 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+Programmer  :   EOF
+File        :   config.py
+Date        :   2016.01.06
+E-mail      :   jasonleaster@163.com
+License     :   MIT License
+
+Description :
+    This is a configure file for this project.
+
+\"\"\"" code nil nil [1 209])
+            ("DEBUG_MODEL" variable nil nil [211 231])
+            ("USING_CASCADE" variable nil nil [232 253])
+            ("TRAINING_FACE" variable nil nil [309 398])
+            ("TRAINING_NONFACE" variable nil nil [399 489])
+            ("TEST_FACE" variable nil nil [541 585])
+            ("TEST_NONFACE" variable nil nil [586 631])
+            ("TEST_IMG" variable nil nil [660 698])
+            ("FEATURE_FILE_TRAINING" variable nil nil [700 757])
+            ("FEATURE_FILE_TESTING" variable nil nil [758 814])
+            ("FEATURE_FILE_SUBSET" variable nil nil [816 874])
+            ("FEATURE_FILE_SUBSET_0" variable nil nil [875 940])
+            ("FEATURE_FILE_SUBSET_1" variable nil nil [941 1006])
+            ("PROCESS_NUM" variable nil nil [1023 1038])
+            ("ADABOOST_CACHE_FILE" variable nil nil [1040 1097])
+            ("ROC_FILE" variable nil nil [1098 1139])
+            ("FIGURES" variable nil nil [1141 1174])
+            ("TRAINING_IMG_HEIGHT" variable nil nil [1217 1241])
+            ("TRAINING_IMG_WIDTH" variable nil nil [1242 1266])
+            ("FEATURE_TYPE_NUM" variable nil nil [1312 1335])
+            ("FEATURE_NUM" variable nil nil [1400 1419])
+            ("POSITIVE_SAMPLE" variable nil nil [1557 1583])
+            ("NEGATIVE_SAMPLE" variable nil nil [1584 1610])
+            ("SAMPLE_NUM" code nil nil [1612 1658])
+            ("TESTING_POSITIVE_SAMPLE" variable nil nil [1660 1688])
+            ("TESTING_NEGATIVE_SAMPLE" variable nil nil [1689 1717])
+            ("TESTING_SAMPLE_NUM" code nil nil [1719 1789])
+            ("LABEL_POSITIVE" code nil nil [1791 1810])
+            ("LABEL_NEGATIVE" code nil nil [1811 1830])
+            ("WHITE" variable nil nil [1832 1843])
+            ("BLACK" variable nil nil [1844 1853])
+            ("EXPECTED_TPR" variable nil nil [1855 1875])
+            ("EXPECTED_FPR" variable nil nil [1876 1897])
+            ("EXPECTED_FPR_PRE_LAYYER" variable nil nil [1913 1942])
+            ("EXPECTED_TPR_PRE_LAYYER" variable nil nil [1943 1974])
+            ("AB_TH_MIN" code nil nil [2031 2048])
+            ("AB_TH_MAX" code nil nil [2049 2066])
+            ("HAAR_FEATURE_TYPE_I" variable nil nil [2068 2097])
+            ("HAAR_FEATURE_TYPE_II" variable nil nil [2098 2128])
+            ("HAAR_FEATURE_TYPE_III" variable nil nil [2129 2160])
+            ("HAAR_FEATURE_TYPE_IV" variable nil nil [2161 2191])
+            ("HAAR_FEATURE_TYPE_V" variable nil nil [2192 2221])
+            ("AB_TH" code nil nil [2223 2240])
+            ("OVER_LAP_TH" variable nil nil [2241 2258])
+            ("MAX_WEAK_NUM" variable nil nil [2260 2277])
+            ("CASACADE_LIMIT" variable nil nil [2279 2297])
+            ("ADABOOST_LIMIT" variable nil nil [2298 2318])
+            ("SEARCH_WIN_STEP" variable nil nil [2320 2339])
+            ("DETECT_START" variable nil nil [2341 2358])
+            ("DETECT_END" variable nil nil [2359 2376])
+            ("DETECT_STEP" variable nil nil [2377 2395]))          
+      :file "config.py"
+      :pointmax 2396
+      :fsize 2395
+      :lastmodtime '(22308 53286 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+Programmer  :   EOF
+File        :   EFace.py
+Date        :   2015.12.29
+E-mail      :   jasonleaster@163.com
+
+\"\"\"" code nil nil [1 118])
+            ("config" include nil nil [120 147])
+            ("matplotlib" include nil nil [148 176])
+            ("matplotlib" include nil nil [177 206])
+            ("pylab" include nil nil [207 219])
+            ("time" include nil nil [220 241])
+            ("detector" include nil nil [242 271])
+            ("start_time" variable nil nil [273 292])
+            ("img" variable nil nil [294 322])
+            ("if" code nil nil [324 416])
+            ("det" variable nil nil [417 433])
+            ("rectangles" variable nil nil [435 486])
+            ("end_time" variable nil nil [488 505])
+            ("print" code nil nil [507 554])
+            ("print" code nil nil [555 597])
+            ("det" code nil nil [599 630]))          
+      :file "EFace.py"
+      :pointmax 631
+      :fsize 630
+      :lastmodtime '(22308 53286 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "detector.py"
+      :fsize 8291
+      :lastmodtime '(22308 53286 0 0)))
+  :file "!Users!radiohead!Dropbox!SHARE_FOR_VM!python_projects!DOWNLOAD!FaceDetection-master!FaceDetection!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

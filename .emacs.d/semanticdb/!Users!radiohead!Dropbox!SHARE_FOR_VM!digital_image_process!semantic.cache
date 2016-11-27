@@ -1,0 +1,37 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("PIL" include nil nil [62 83])
+            ("numpy" include nil nil [84 102])
+            ("output_image_by_threshold" function (:arguments 
+              ( ("t" variable nil (reparse-symbol function_parameters) [134 135])
+                ("image" variable nil (reparse-symbol function_parameters) [137 142]))              ) nil [104 429])
+            ("image_path" variable nil nil [475 507])
+            ("image_ori" variable nil nil [508 542])
+            ("image_gray" variable nil nil [543 591])
+            ("image_gray_pixels" variable nil nil [592 638])
+            ("image_width" variable nil nil [668 700])
+            ("image_height" variable nil nil [701 734])
+            ("pixelSum" code nil nil [736 773])
+            ("pixelCount" variable nil nil [808 844])
+            ("for" code nil nil [845 1002])
+            ("pixelPro" variable nil nil [1024 1058])
+            ("for" code nil nil [1059 1136])
+            ("threshold" variable nil nil [1244 1257])
+            ("w0, w1, u0tmp, u1tmp, u0, u1, deltaTmp, deltaMax" code nil nil [1258 1324])
+            ("for" code nil nil [1325 2045])
+            ("image_ori" code nil nil [2074 2090])
+            ("output_image_by_threshold" code nil nil [2091 2139]))          
+      :file "otsu.py"
+      :pointmax 2140
+      :fsize 2277
+      :lastmodtime '(22577 28155 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 2028 . 2045) (NEWLINE 2027 . 2028) (COLON 2026 . 2027) (FINALLY 2019 . 2026))))
+  :file "!Users!radiohead!Dropbox!SHARE_FOR_VM!digital_image_process!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

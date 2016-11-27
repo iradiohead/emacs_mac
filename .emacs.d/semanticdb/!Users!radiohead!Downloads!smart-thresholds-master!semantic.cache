@@ -1,0 +1,58 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-bsdmake-mode
+      :tags 
+        '( ("make" function nil nil [1 45])
+            ("clean" function nil nil [46 67]))          
+      :file "Makefile"
+      :pointmax 67
+      :fsize 66
+      :lastmodtime '(21476 23740 0 0)
+      :unmatched-syntax '((shell-command 61 . 66) (bol 60 . 60)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("PIL" include nil nil [1 22])
+            ("os" include nil nil [23 37])
+            ("sys" include nil nil [23 37])
+            ("'''
+try:
+  img = Image.open(sys.argv[1])
+  img.load()
+  img.show()
+  bw = img.convert('L')
+except IOError:
+  print \"Unable to open file. Please try another format.\"
+
+threshold = raw_input(\"Choose threshold value: \") 
+
+intensity_array = []
+
+for w in range(0,bw.size[1]):
+  for h in range(0,bw.size[0]):
+    intensity = bw.getpixel((h,w))
+    if (intensity <= int(threshold)):
+      x = 0
+    else:
+      x = 255
+    intensity_array.append(x)
+
+bw.putdata(intensity_array)
+bw.show()
+
+'''" code nil nil [39 523])
+            ("threshold" function (:arguments 
+              ( ("t" variable nil (reparse-symbol function_parameters) [539 540])
+                ("image" variable nil (reparse-symbol function_parameters) [542 547]))              ) nil [525 836]))          
+      :file "basic_threshold.py"
+      :pointmax 836
+      :fsize 835
+      :lastmodtime '(21476 23740 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!radiohead!Downloads!smart-thresholds-master!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

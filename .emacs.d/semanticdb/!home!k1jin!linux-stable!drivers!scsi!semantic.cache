@@ -1,0 +1,169 @@
+;; Object scsi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scsi/"
+  :tables (list 
+   (semanticdb-table "scsi_sas_internal.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_SCSI_SAS_INTERNAL_H" variable (:constant-flag t) nil [38 58])
+            ("SAS_HOST_ATTRS" variable (:constant-flag t) nil [68 82])
+            ("SAS_PHY_ATTRS" variable (:constant-flag t) nil [94 107])
+            ("SAS_PORT_ATTRS" variable (:constant-flag t) nil [120 134])
+            ("SAS_RPORT_ATTRS" variable (:constant-flag t) nil [146 161])
+            ("SAS_END_DEV_ATTRS" variable (:constant-flag t) nil [173 190])
+            ("SAS_EXPANDER_ATTRS" variable (:constant-flag t) nil [201 219])
+            ("sas_internal" type
+               (:members 
+                  ( ("t" variable (:type ("scsi_transport_template" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [246 279])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("sas_function_template" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [281 313])
+                    ("dft" variable
+                       (:pointer 1
+                        :type ("sas_domain_function_template" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [315 356])
+                    ("private_host_attrs" variable
+                       (:dereference 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [359 418])
+                    ("private_phy_attrs" variable
+                       (:dereference 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [420 477])
+                    ("private_port_attrs" variable
+                       (:dereference 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [479 538])
+                    ("private_rphy_attrs" variable
+                       (:dereference 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [540 600])
+                    ("private_end_dev_attrs" variable
+                       (:dereference 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [602 667])
+                    ("private_expander_attrs" variable
+                       (:dereference 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [669 736])
+                    ("phy_attr_cont" variable (:type ("transport_container" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [739 780])
+                    ("port_attr_cont" variable (:type ("transport_container" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [782 824])
+                    ("rphy_attr_cont" variable (:type ("transport_container" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [826 868])
+                    ("end_dev_attr_cont" variable (:type ("transport_container" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [870 915])
+                    ("expander_attr_cont" variable (:type ("transport_container" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [917 963])
+                    ("host_attrs" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1058 1114])
+                    ("phy_attrs" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1116 1170])
+                    ("port_attrs" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1172 1228])
+                    ("rphy_attrs" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1230 1287])
+                    ("end_dev_attrs" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1289 1351])
+                    ("expander_attrs" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1353 1417]))                  
+                :type "struct")
+                nil [223 1420])
+            ("to_sas_internal" variable (:constant-flag t) nil [1429 1444]))          
+    :file "scsi_sas_internal.h"
+    :pointmax 1502
+    :fsize 1501
+    :lastmodtime '(22436 15415 89042 448000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_SCSI_SAS_INTERNAL_H")
+          ("SAS_HOST_ATTRS" . ((number "0" 84 . 85)))
+          ("SAS_PHY_ATTRS" . ((number "17" 109 . 111)))
+          ("SAS_PORT_ATTRS" . ((number "1" 136 . 137)))
+          ("SAS_RPORT_ATTRS" . ((number "8" 163 . 164)))
+          ("SAS_EXPANDER_ATTRS" . ((number "7" 220 . 221)))
+          ("SAS_END_DEV_ATTRS" . ((number "5" 191 . 192)))
+          ("to_sas_internal" (spp-arg-list ("tmpl") 1444 . 1450) . ((symbol "container_of" 1451 . 1463) (semantic-list "(tmpl, struct sas_internal, t)" 1463 . 1493)))
+          )
+
+    )
+   )
+  :file "!home!k1jin!linux-stable!drivers!scsi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

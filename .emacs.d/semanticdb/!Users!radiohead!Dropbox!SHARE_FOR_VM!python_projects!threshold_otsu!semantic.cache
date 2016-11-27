@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("PIL" include nil nil [62 83])
+            ("numpy" include nil nil [84 102])
+            ("basic_threshold" include nil nil [103 131])
+            ("total_pix" function (:arguments 
+              ( ("image" variable nil (reparse-symbol function_parameters) [147 152]))              ) nil [133 208])
+            ("histogramify" function (:arguments 
+              ( ("image" variable nil (reparse-symbol function_parameters) [226 231]))              ) nil [209 643])
+            ("otsu" function (:arguments 
+              ( ("image" variable nil (reparse-symbol function_parameters) [654 659]))              ) nil [645 1361])
+            ("test" variable nil nil [1379 1417])
+            ("print" code nil nil [1418 1434])
+            ("print" code nil nil [1435 1445])
+            ("image" variable nil nil [1447 1531])
+            ("image" code nil nil [1532 1544])
+            ("image" code nil nil [1545 1557])
+            ("print" code nil nil [1558 1575])
+            ("print" code nil nil [1622 1641])
+            ("print" code nil nil [1642 1661])
+            ("bw" variable nil nil [1663 1686]))          
+      :file "otsu.py"
+      :pointmax 1718
+      :fsize 1717
+      :lastmodtime '(22541 20741 0 0)
+      :unmatched-syntax '((NAME 1710 . 1714) ($EOI 1718 . 1718)))
+    (semanticdb-table "semanticdb-table"
+      :file "basic_threshold.py"
+      :fsize 835
+      :lastmodtime '(21476 23740 0 0)))
+  :file "!Users!radiohead!Dropbox!SHARE_FOR_VM!python_projects!threshold_otsu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [299 337])
+            ("__future__" include nil nil [338 369])
+            ("__future__" include nil nil [370 407])
+            ("cv2" include nil nil [409 419])
+            ("pylab" include nil nil [420 439])
+            ("numpy" include nil nil [440 458])
+            ("varianceCalculate" function (:arguments 
+              ( ("average" variable nil (reparse-symbol function_parameters) [482 489])
+                ("histgram" variable nil (reparse-symbol function_parameters) [491 499]))              ) nil [460 666])
+            ("averageAndpixelSumCalculate" function (:arguments 
+              ( ("histgram" variable nil (reparse-symbol function_parameters) [699 707]))              ) nil [667 971])
+            ("within_betweenCV" function (:arguments 
+              ( ("pixelSum1" variable nil (reparse-symbol function_parameters) [993 1002])
+                ("average1" variable nil (reparse-symbol function_parameters) [1004 1012])
+                ("variance1" variable nil (reparse-symbol function_parameters) [1014 1023])
+                ("pixelSum2" variable nil (reparse-symbol function_parameters) [1025 1034])
+                ("average2" variable nil (reparse-symbol function_parameters) [1036 1044])
+                ("variance2" variable nil (reparse-symbol function_parameters) [1046 1055]))              ) nil [972 1366])
+            ("calculateAll" function (:arguments 
+              ( ("blackList" variable nil (reparse-symbol function_parameters) [1384 1393])
+                ("whiteList" variable nil (reparse-symbol function_parameters) [1395 1404]))              ) nil [1367 1948])
+            ("main" function nil nil [1949 5316])
+            ("if" code nil nil [5317 5355]))          
+      :file "otsu_threshold_.py"
+      :pointmax 5356
+      :fsize 6598
+      :lastmodtime '(22289 4140 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!radiohead!Downloads!otsu_method-master!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

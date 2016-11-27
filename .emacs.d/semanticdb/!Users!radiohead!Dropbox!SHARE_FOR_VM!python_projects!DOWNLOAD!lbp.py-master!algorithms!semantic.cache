@@ -1,0 +1,53 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("PIL" include nil nil [20 41])
+            ("LBP" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [157 200])
+                            ("self" variable nil (reparse-symbol indented_block_body) [209 240])
+                            ("self" variable nil (reparse-symbol indented_block_body) [249 281])
+                            ("self" variable nil (reparse-symbol indented_block_body) [290 308])
+                            ("self" variable nil (reparse-symbol indented_block_body) [317 351])
+                            ("self" variable nil (reparse-symbol indented_block_body) [360 380]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [71 75])
+                            ("input" variable nil (reparse-symbol function_parameters) [77 82])
+                            ("num_processes" variable nil (reparse-symbol function_parameters) [84 97])
+                            ("output" variable nil (reparse-symbol function_parameters) [99 105]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [58 381])
+                    ("execute" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [398 402]))                          )
+                        (reparse-symbol indented_block_body) [386 480])
+                    ("_process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [498 502]))                          )
+                        (reparse-symbol indented_block_body) [485 1947])
+                    ("_output" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1964 1968]))                          )
+                        (reparse-symbol indented_block_body) [1952 2184]))                  
+                :type "class")
+                nil [43 2184]))          
+      :file "LBP.py"
+      :pointmax 2184
+      :fsize 2183
+      :lastmodtime '(21833 33040 0 0)
+      :unmatched-syntax '((NAME 1831 . 1838) (IF 1860 . 1862) (ELSE 1888 . 1892) (NAME 1748 . 1755) (IF 1777 . 1779) (ELSE 1802 . 1806) (NAME 1667 . 1674) (IF 1696 . 1698) (ELSE 1719 . 1723) (NAME 1584 . 1591) (IF 1613 . 1615) (ELSE 1638 . 1642) (NAME 1498 . 1505) (IF 1527 . 1529) (ELSE 1555 . 1559) (NAME 1411 . 1418) (IF 1440 . 1442) (ELSE 1469 . 1473) (NAME 1326 . 1333) (IF 1355 . 1357) (ELSE 1382 . 1386) (NAME 1239 . 1246) (IF 1268 . 1270) (ELSE 1297 . 1301))))
+  :file "!Users!radiohead!Dropbox!SHARE_FOR_VM!python_projects!DOWNLOAD!lbp.py-master!algorithms!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

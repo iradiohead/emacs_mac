@@ -1,0 +1,76 @@
+;; Object hwcpp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "hwcpp/"
+  :tables (list 
+   (semanticdb-table "calc.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("math.h" include (:system-flag t) nil [1 18])
+            ("stdio.h" include (:system-flag t) nil [19 37])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [48 53]))                  
+                :type "int")
+                nil [39 156]))          
+    :file "calc.c"
+    :pointmax 157
+    :fsize 156
+    :lastmodtime '(22338 26070 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "hello.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("hello.h" include nil nil [1 19])
+            ("stdio.h" include nil nil [20 38])
+            ("stdlib.h" include (:system-flag t) nil [39 58])
+            ("unistd.h" include (:system-flag t) nil [59 78])
+            ("glib.h" include (:system-flag t) nil [79 96])
+            ("file_name" variable (:constant-flag t) nil [107 116])
+            ("bbb" variable
+               (:dereference 1
+                :type "int")
+                nil [159 178])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [188 193]))                  
+                :type "int")
+                nil [179 1143]))          
+    :file "hello.cpp"
+    :pointmax 1146
+    :fsize 1145
+    :lastmodtime '(22338 27157 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("file_name" . ((string "\"/vagrant_data/helloword/data_g_key.txt\"" 118 . 158)))
+          )
+
+    )
+   (semanticdb-table "hello.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("hello" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15 33]))                  
+                :type "void")
+                nil [4 34])
+            ("aaa" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [35 50]))          
+    :file "hello.h"
+    :pointmax 51
+    :fsize 50
+    :lastmodtime '(22338 26990 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!k1jin!Dropbox!SHARE_FOR_VM!C_C++_projects!hwcpp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,18 @@
+;; Object Source/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Source/"
+  :tables (list 
+   (semanticdb-table "AdManager.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "AdManager.cpp"
+    :pointmax 5775
+    :fsize 6033
+    :lastmodtime '(18898 49132 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!k1jin!Dropbox!personal!sourcecode!Source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

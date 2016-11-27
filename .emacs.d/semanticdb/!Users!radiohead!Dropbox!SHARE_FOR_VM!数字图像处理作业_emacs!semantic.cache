@@ -1,0 +1,71 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("cv2" include nil nil [72 88])
+            ("numpy" include nil nil [89 101])
+            ("print" code nil nil [142 159])
+            ("print" code nil nil [160 183])
+            ("print" code nil nil [184 201])
+            ("grayimg" variable nil nil [203 250])
+            ("for" code nil nil [252 422])
+            ("cv" code nil nil [423 451])
+            ("cv" code nil nil [452 483])
+            ("cv" code nil nil [484 501]))          
+      :file "gray.py"
+      :pointmax 518
+      :fsize 517
+      :lastmodtime '(22575 57765 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+1: calculate the average value for each channel of each pixel ,get result M
+2: remove means for each channel of pixel,get the result
+3: multiply contrast ratio to above result, get P
+4: p + M * brightness ratio
+\"\"\"" code nil nil [72 290])
+            ("cv2" include nil nil [292 308])
+            ("numpy" include nil nil [309 321])
+            ("getContrast" function nil nil [390 424])
+            ("getBrightness" function nil nil [425 459])
+            ("clamp" function (:arguments 
+              ( ("value" variable nil (reparse-symbol function_parameters) [471 476]))              ) nil [460 611])
+            ("image" variable nil nil [634 671])
+            ("print" code nil nil [672 689])
+            ("print" code nil nil [705 722])
+            ("print" code nil nil [738 755])
+            ("red_sum" variable nil nil [791 802])
+            ("green_sum" variable nil nil [803 816])
+            ("blue_sum" variable nil nil [817 829])
+            ("for" code nil nil [830 1003])
+            ("total" code nil nil [1004 1041])
+            ("rgbmeans" variable nil nil [1042 1060])
+            ("rgbmeans" variable nil nil [1061 1097])
+            ("rgbmeans" variable nil nil [1099 1137])
+            ("rgbmeans" variable nil nil [1139 1176])
+            ("print" code nil nil [1178 1195])
+            ("print" code nil nil [1196 1213])
+            ("print" code nil nil [1214 1231])
+            ("tr" variable nil nil [1275 1281])
+            ("tg" variable nil nil [1282 1288])
+            ("tb" variable nil nil [1289 1295])
+            ("out_img" variable nil nil [1296 1343])
+            ("for" code nil nil [1344 2000])
+            ("cv" code nil nil [2001 2029])
+            ("cv" code nil nil [2030 2060])
+            ("print" code nil nil [2061 2095])
+            ("cv" code nil nil [2096 2109]))          
+      :file "contrast.py"
+      :pointmax 2110
+      :fsize 2109
+      :lastmodtime '(22575 57944 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!radiohead!Dropbox!SHARE_FOR_VM!数字图像处理作业_emacs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

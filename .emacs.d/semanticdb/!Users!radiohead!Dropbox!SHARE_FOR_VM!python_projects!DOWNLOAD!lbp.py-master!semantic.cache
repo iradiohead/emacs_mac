@@ -1,0 +1,66 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("os.path" include nil nil [1 15])
+            ("argparse" include nil nil [16 31])
+            ("algorithms" include nil nil [32 56])
+            ("main" function nil nil [58 1508])
+            ("if" code nil nil [1509 1547]))          
+      :file "main.py"
+      :pointmax 1547
+      :fsize 1546
+      :lastmodtime '(21833 33040 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("sys" include nil nil [1 11])
+            ("os" include nil nil [12 21])
+            ("BeautifulSoup" include nil nil [22 61])
+            ("urllib2" include nil nil [62 76])
+            ("imghdr" include nil nil [77 90])
+            ("argparse" include nil nil [91 106])
+            ("Scraper" type
+               (:members 
+                  ( ("MAIN_URL" variable nil (reparse-symbol indented_block_body) [127 160])
+                    ("GRID_URL" variable nil (reparse-symbol indented_block_body) [165 211])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [260 280])
+                            ("self" variable nil (reparse-symbol indented_block_body) [289 307])
+                            ("self" variable nil (reparse-symbol indented_block_body) [316 335]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [230 234])
+                            ("target" variable nil (reparse-symbol function_parameters) [236 242])
+                            ("limit" variable nil (reparse-symbol function_parameters) [244 249]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [217 336])
+                    ("scrape" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [352 356]))                          )
+                        (reparse-symbol indented_block_body) [341 919])
+                    ("download" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [937 941])
+                            ("source" variable nil (reparse-symbol function_parameters) [943 949]))                          )
+                        (reparse-symbol indented_block_body) [924 2077]))                  
+                :type "class")
+                nil [108 2077])
+            ("main" function nil nil [2078 2700])
+            ("if" code nil nil [2701 2739]))          
+      :file "scraper.py"
+      :pointmax 2739
+      :fsize 2738
+      :lastmodtime '(21833 33040 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!radiohead!Dropbox!SHARE_FOR_VM!python_projects!DOWNLOAD!lbp.py-master!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

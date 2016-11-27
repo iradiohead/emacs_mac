@@ -1,0 +1,234 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "Demo.cpp"
+      :pointmax 1527
+      :fsize 1967
+      :lastmodtime '(22515 4462 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdafx.h" include nil nil [28 47])
+            ("Demo.h" include nil nil [48 65])
+            ("DemoDlg.h" include nil nil [66 86])
+            ("afxdialogex.h" include nil nil [87 111])
+            ("opencv2/opencv.hpp" include nil nil [112 141])
+            ("windows.h" include nil nil [142 162])
+            ("fstream" include nil nil [163 181])
+            ("iostream" include (:system-flag t) nil [182 201])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [202 222])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [223 242])
+            ("getHOG" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pSrcImage" variable
+                       (:pointer 1
+                        :type ("IplImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [301 321])
+                    ("bshow" variable (:type "bool") (reparse-symbol arg-sub-list) [321 332])
+                    ("featureVec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [332 358]))                  
+                :type "void")
+                nil [289 359])
+            ("func" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("i_x" variable (:type "int") (reparse-symbol arg-sub-list) [370 378])
+                    ("i_y" variable (:type "int") (reparse-symbol arg-sub-list) [379 387])
+                    ("i_w" variable (:type "int") (reparse-symbol arg-sub-list) [388 396])
+                    ("Img_in" variable
+                       (:pointer 1
+                        :type ("IplImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [397 414])
+                    ("fbin" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [415 427]))                  
+                :type "void")
+                nil [360 428])
+            ("CAboutDlg" type
+               (:superclasses 
+                  ( ("CDialogEx" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [500 507])
+                    ("CAboutDlg" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("CAboutDlg" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [509 521])
+                    ("" type
+                       (:members 
+                          ( ("IDD" variable
+                               (:constant-flag t
+                                :default-value (546 558)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [540 558]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [533 561])
+                    ("protected" label nil (reparse-symbol classsubparts) [564 574])
+                    ("DoDataExchange" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("pDX" variable
+                               (:pointer 1
+                                :type ("CDataExchange" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [604 623]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [576 624])
+                    ("protected" label nil (reparse-symbol classsubparts) [649 659]))                  
+                :type "class")
+                nil [463 685])
+            ("CAboutDlg" function
+               (:constructor-flag t
+                :parent "CAboutDlg"
+                :type ("CAboutDlg" type (:type "class") nil nil))
+                nil [687 741])
+            ("DoDataExchange" function
+               (:parent "CAboutDlg"
+                :arguments 
+                  ( ("pDX" variable
+                       (:pointer 1
+                        :type ("CDataExchange" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [774 793]))                  
+                :type "void")
+                nil [743 830])
+            ("CDemoDlg" function
+               (:constructor-flag t
+                :parent "CDemoDlg"
+                :arguments 
+                  ( ("pParent" variable
+                       (:pointer 1
+                        :type ("CWnd" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [931 955]))                  
+                :type ("CDemoDlg" type (:type "class") nil nil))
+                nil [912 1045])
+            ("DoDataExchange" function
+               (:parent "CDemoDlg"
+                :arguments 
+                  ( ("pDX" variable
+                       (:pointer 1
+                        :type ("CDataExchange" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1077 1096]))                  
+                :type "void")
+                nil [1047 1187])
+            ("OnInitDialog" function
+               (:parent "CDemoDlg"
+                :type ("BOOL" type (:type "class") nil nil))
+                nil [1942 2794])
+            ("OnSysCommand" function
+               (:parent "CDemoDlg"
+                :arguments 
+                  ( ("nID" variable (:type ("UINT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2824 2833])
+                    ("lParam" variable (:type ("LPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2834 2848]))                  
+                :type "void")
+                nil [2796 2991])
+            ("OnPaint" function
+               (:parent "CDemoDlg"
+                :type "void")
+                nil [3069 3545])
+            ("OnQueryDragIcon" function
+               (:parent "CDemoDlg"
+                :type ("HCURSOR" type (:type "class") nil nil))
+                nil [3578 3656])
+            ("pImg" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("IplImage" type (:type "class") nil nil))
+                nil [3659 3681])
+            ("pGray" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("IplImage" type (:type "class") nil nil))
+                nil [3682 3705])
+            ("pContrastImage" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("IplImage" type (:type "class") nil nil))
+                nil [3706 3738])
+            ("OnBnClickedButton1" function
+               (:parent "CDemoDlg"
+                :type "void")
+                nil [3739 4508])
+            ("OnBnClickedButton2" function
+               (:parent "CDemoDlg"
+                :type "void")
+                nil [4518 5480])
+            ("OnBnClickedButton3" function
+               (:parent "CDemoDlg"
+                :type "void")
+                nil [5489 5946])
+            ("OnNMCustomdrawSlider1" function
+               (:parent "CDemoDlg"
+                :arguments 
+                  ( ("pNMHDR" variable
+                       (:pointer 1
+                        :type ("NMHDR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5991 6005])
+                    ("pResult" variable
+                       (:pointer 1
+                        :type ("LRESULT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6006 6023]))                  
+                :type "void")
+                nil [5954 7306])
+            ("OnBnClickedCancel" function
+               (:parent "CDemoDlg"
+                :type "void")
+                nil [7309 7420])
+            ("OnBnClickedButton5" function
+               (:parent "CDemoDlg"
+                :type "void")
+                nil [7434 9185])
+            ("OnBnClickedButton6" function
+               (:parent "CDemoDlg"
+                :type "void")
+                nil [9194 10843])
+            ("OnBnClickedButton7" function
+               (:parent "CDemoDlg"
+                :type "void")
+                nil [10857 12126])
+            ("OnBnClickedButton4" function
+               (:parent "CDemoDlg"
+                :type "void")
+                nil [12135 13770]))          
+      :file "DemoDlg.cpp"
+      :pointmax 13771
+      :fsize 15450
+      :lastmodtime '(22539 1156 0 0)
+      :unmatched-syntax '((semantic-list 1917 . 1919) (symbol 1902 . 1917) (semantic-list 1857 . 1901) (symbol 1844 . 1857) (punctuation 1871 . 1872) (semantic-list 1798 . 1842) (symbol 1785 . 1798) (punctuation 1812 . 1813) (semantic-list 1739 . 1783) (symbol 1726 . 1739) (punctuation 1753 . 1754) (semantic-list 1680 . 1724) (symbol 1667 . 1680) (punctuation 1694 . 1695) (semantic-list 1625 . 1665) (symbol 1612 . 1625) (punctuation 1636 . 1637) (semantic-list 1548 . 1610) (symbol 1539 . 1548) (punctuation 1577 . 1578) (semantic-list 1493 . 1537) (symbol 1480 . 1493) (punctuation 1507 . 1508) (semantic-list 1359 . 1403) (symbol 1346 . 1359) (punctuation 1373 . 1374) (semantic-list 1300 . 1344) (symbol 1287 . 1300) (punctuation 1314 . 1315) (semantic-list 1283 . 1285) (symbol 1264 . 1283) (semantic-list 1260 . 1262) (symbol 1249 . 1260) (semantic-list 1245 . 1247) (symbol 1229 . 1245) (semantic-list 1206 . 1227) (symbol 1189 . 1206) (semantic-list 887 . 889) (symbol 872 . 887) (semantic-list 849 . 871) (symbol 832 . 849) (semantic-list 680 . 682) (symbol 661 . 680)))
+    (semanticdb-table "semanticdb-table"
+      :file "stdafx.h"
+      :fsize 1632
+      :lastmodtime '(22515 4462 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "Demo.h"
+      :fsize 430
+      :lastmodtime '(22515 4462 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "DemoDlg.h"
+      :fsize 1030
+      :lastmodtime '(22530 16589 0 0)))
+  :file "!Users!radiohead!Dropbox!SHARE_FOR_VM!python_projects!DOWNLOAD!Demo!Demo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

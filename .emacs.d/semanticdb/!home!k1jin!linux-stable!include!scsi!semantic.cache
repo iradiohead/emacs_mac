@@ -1,0 +1,988 @@
+;; Object scsi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scsi/"
+  :tables (list 
+   (semanticdb-table "scsi.h"
+    :file "scsi.h"
+    :fsize 9061
+    :lastmodtime '(22436 15435 817058 650000)
+    )
+   (semanticdb-table "scsi_host.h"
+    :file "scsi_host.h"
+    :fsize 28545
+    :lastmodtime '(22436 15435 824058 656000)
+    )
+   (semanticdb-table "scsi_transport_sas.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SCSI_TRANSPORT_SAS_H" variable (:constant-flag t) nil [38 58])
+            ("linux/transport_class.h" include (:system-flag t) nil [60 94])
+            ("linux/types.h" include (:system-flag t) nil [95 119])
+            ("linux/mutex.h" include (:system-flag t) nil [120 144])
+            ("scsi/sas.h" include (:system-flag t) nil [145 166])
+            ("scsi_transport_template" type
+               (:prototype t
+                :type "struct")
+                nil [168 199])
+            ("sas_rphy" type
+               (:prototype t
+                :type "struct")
+                nil [200 216])
+            ("request" type
+               (:prototype t
+                :type "struct")
+                nil [217 232])
+            ("is_sas_attached" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("sdev" variable
+                       (:pointer 1
+                        :type ("scsi_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [381 406]))                  
+                :type "int")
+                nil [354 407])
+            ("sas_protocol_ata" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("proto" variable (:type ("sas_protocol" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [451 475]))                  
+                :type "int")
+                nil [416 557])
+            ("sas_linkrate" type
+               (:members 
+                  ( ("SAS_LINK_RATE_UNKNOWN" variable
+                       (:constant-flag t
+                        :default-value (656 657)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [632 657])
+                    ("SAS_PHY_DISABLED" variable
+                       (:constant-flag t
+                        :default-value (679 680)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [660 680])
+                    ("SAS_PHY_RESET_PROBLEM" variable
+                       (:constant-flag t
+                        :default-value (707 708)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [683 708])
+                    ("SAS_SATA_SPINUP_HOLD" variable
+                       (:constant-flag t
+                        :default-value (734 735)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [711 735])
+                    ("SAS_SATA_PORT_SELECTOR" variable
+                       (:constant-flag t
+                        :default-value (763 764)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [738 764])
+                    ("SAS_PHY_RESET_IN_PROGRESS" variable
+                       (:constant-flag t
+                        :default-value (795 796)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [767 796])
+                    ("SAS_LINK_RATE_1_5_GBPS" variable
+                       (:constant-flag t
+                        :default-value (824 825)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [799 825])
+                    ("SAS_LINK_RATE_G1" variable
+                       (:constant-flag t
+                        :default-value (847 870)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [828 870])
+                    ("SAS_LINK_RATE_3_0_GBPS" variable
+                       (:constant-flag t
+                        :default-value (897 898)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [872 898])
+                    ("SAS_LINK_RATE_G2" variable
+                       (:constant-flag t
+                        :default-value (920 943)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [901 943])
+                    ("SAS_LINK_RATE_6_0_GBPS" variable
+                       (:constant-flag t
+                        :default-value (970 972)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [945 972])
+                    ("SAS_LINK_RATE_12_0_GBPS" variable
+                       (:constant-flag t
+                        :default-value (1001 1003)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [975 1003])
+                    ("SAS_LINK_RATE_FAILED" variable
+                       (:constant-flag t
+                        :default-value (1169 1173)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1146 1173])
+                    ("SAS_PHY_VIRTUAL" variable
+                       (:constant-flag t
+                        :default-value (1194 1198)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1176 1198]))                  
+                :type "enum")
+                nil [559 1202])
+            ("sas_identify" type
+               (:members 
+                  ( ("device_type" variable (:type ("sas_device_type" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [1227 1260])
+                    ("initiator_port_protocols" variable (:type ("sas_protocol" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [1262 1305])
+                    ("target_port_protocols" variable (:type ("sas_protocol" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [1307 1347])
+                    ("sas_address" variable (:type ("u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1349 1367])
+                    ("phy_identifier" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1369 1389]))                  
+                :type "struct")
+                nil [1204 1392])
+            ("sas_phy" type
+               (:members 
+                  ( ("dev" variable (:type ("device" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1412 1431])
+                    ("number" variable (:type "int") (reparse-symbol classsubparts) [1433 1446])
+                    ("enabled" variable (:type "int") (reparse-symbol classsubparts) [1448 1462])
+                    ("identify" variable (:type ("sas_identify" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1491 1520])
+                    ("negotiated_linkrate" variable (:type ("sas_linkrate" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [1545 1583])
+                    ("minimum_linkrate_hw" variable (:type ("sas_linkrate" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [1585 1623])
+                    ("minimum_linkrate" variable (:type ("sas_linkrate" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [1625 1660])
+                    ("maximum_linkrate_hw" variable (:type ("sas_linkrate" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [1662 1700])
+                    ("maximum_linkrate" variable (:type ("sas_linkrate" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [1702 1737])
+                    ("invalid_dword_count" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1769 1795])
+                    ("running_disparity_error_count" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1797 1833])
+                    ("loss_of_dword_sync_count" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1835 1866])
+                    ("phy_reset_problem_count" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1868 1898])
+                    ("port_siblings" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1949 1980])
+                    ("hostdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [2012 2029]))                  
+                :type "struct")
+                nil [1394 2032])
+            ("dev_to_phy" variable (:constant-flag t) nil [2042 2052])
+            ("transport_class_to_phy" variable (:constant-flag t) nil [2106 2128])
+            ("phy_to_shost" variable (:constant-flag t) nil [2171 2183])
+            ("request_queue" type
+               (:prototype t
+                :type "struct")
+                nil [2225 2246])
+            ("sas_rphy" type
+               (:members 
+                  ( ("dev" variable (:type ("device" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2266 2285])
+                    ("identify" variable (:type ("sas_identify" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2287 2316])
+                    ("list" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2318 2340])
+                    ("q" variable
+                       (:pointer 1
+                        :type ("request_queue" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2342 2366])
+                    ("scsi_target_id" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2368 2389]))                  
+                :type "struct")
+                nil [2247 2392])
+            ("dev_to_rphy" variable (:constant-flag t) nil [2402 2413])
+            ("transport_class_to_rphy" variable (:constant-flag t) nil [2468 2491])
+            ("rphy_to_shost" variable (:constant-flag t) nil [2535 2548])
+            ("target_to_rphy" variable (:constant-flag t) nil [2599 2613])
+            ("sas_end_device" type
+               (:members 
+                  ( ("rphy" variable (:type ("sas_rphy" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2681 2703])
+                    ("ready_led_meaning" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2718 2748])
+                    ("tlr_supported" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2750 2776])
+                    ("tlr_enabled" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2778 2802])
+                    ("I_T_nexus_loss_timeout" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2822 2851])
+                    ("initiator_response_timeout" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2853 2886]))                  
+                :type "struct")
+                nil [2656 2889])
+            ("rphy_to_end_device" variable (:constant-flag t) nil [2898 2916])
+            ("sas_expander_device" type
+               (:members 
+                  ( ("level" variable (:type "int") (reparse-symbol classsubparts) [3001 3014])
+                    ("next_port_id" variable (:type "int") (reparse-symbol classsubparts) [3016 3036])
+                    ("SAS_EXPANDER_VENDOR_ID_LEN" variable (:constant-flag t) (reparse-symbol classsubparts) [3047 3073])
+                    ("vendor_id" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3077 3124])
+                    ("SAS_EXPANDER_PRODUCT_ID_LEN" variable (:constant-flag t) (reparse-symbol classsubparts) [3134 3161])
+                    ("product_id" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3166 3215])
+                    ("SAS_EXPANDER_PRODUCT_REV_LEN" variable (:constant-flag t) (reparse-symbol classsubparts) [3225 3253])
+                    ("product_rev" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3257 3308])
+                    ("SAS_EXPANDER_COMPONENT_VENDOR_ID_LEN" variable (:constant-flag t) (reparse-symbol classsubparts) [3318 3354])
+                    ("component_vendor_id" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3358 3425])
+                    ("component_id" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3427 3447])
+                    ("component_revision_id" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3449 3478])
+                    ("rphy" variable (:type ("sas_rphy" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3481 3503]))                  
+                :type "struct")
+                nil [2971 3507])
+            ("rphy_to_expander_device" variable (:constant-flag t) nil [3516 3539])
+            ("sas_port" type
+               (:members 
+                  ( ("dev" variable (:type ("device" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3618 3637])
+                    ("port_identifier" variable (:type "int") (reparse-symbol classsubparts) [3640 3662])
+                    ("num_phys" variable (:type "int") (reparse-symbol classsubparts) [3664 3679])
+                    ("is_backlink" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [3699 3727])
+                    ("rphy" variable
+                       (:pointer 1
+                        :type ("sas_rphy" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3763 3786])
+                    ("phy_list_mutex" variable (:type ("mutex" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3789 3818])
+                    ("phy_list" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3820 3846]))                  
+                :type "struct")
+                nil [3599 3849])
+            ("dev_to_sas_port" variable (:constant-flag t) nil [3859 3874])
+            ("transport_class_to_sas_port" variable (:constant-flag t) nil [3929 3956])
+            ("sas_phy_linkrates" type
+               (:members 
+                  ( ("maximum_linkrate" variable (:type ("sas_linkrate" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [4025 4060])
+                    ("minimum_linkrate" variable (:type ("sas_linkrate" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [4062 4097]))                  
+                :type "struct")
+                nil [3997 4100])
+            ("sas_function_template" type
+               (:members 
+                  ( ("get_linkerrors" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4210 4250])
+                    ("get_enclosure_identifier" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4252 4310])
+                    ("get_bay_identifier" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4312 4357])
+                    ("phy_reset" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4359 4399])
+                    ("phy_enable" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4401 4442])
+                    ("phy_setup" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4444 4479])
+                    ("phy_release" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4481 4519])
+                    ("set_phy_speed" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4521 4588])
+                    ("smp_handler" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4590 4666]))                  
+                :type "struct")
+                nil [4178 4669])
+            ("sas_remove_children" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4697 4713]))                  
+                :type "void")
+                nil [4672 4714])
+            ("sas_remove_host" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Scsi_Host" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4743 4762]))                  
+                :type "void")
+                nil [4715 4763])
+            ("sas_phy_alloc" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4802 4818])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [4819 4823]))                  
+                :type ("sas_phy" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4765 4824])
+            ("sas_phy_free" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sas_phy" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4850 4867]))                  
+                :type "void")
+                nil [4825 4868])
+            ("sas_phy_add" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sas_phy" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4892 4909]))                  
+                :type "int")
+                nil [4869 4910])
+            ("sas_phy_delete" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sas_phy" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4938 4955]))                  
+                :type "void")
+                nil [4911 4956])
+            ("scsi_is_sas_phy" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4984 5006]))                  
+                :type "int")
+                nil [4957 5007])
+            ("sas_get_address" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("scsi_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5029 5050]))                  
+                :type ("u64" type (:type "class") nil nil))
+                nil [5009 5051])
+            ("sas_tlr_supported" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("scsi_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5083 5104]))                  
+                :type "unsigned int")
+                nil [5052 5105])
+            ("sas_is_tlr_enabled" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("scsi_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5138 5159]))                  
+                :type "unsigned int")
+                nil [5106 5160])
+            ("sas_disable_tlr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("scsi_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5182 5203]))                  
+                :type "void")
+                nil [5161 5204])
+            ("sas_enable_tlr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("scsi_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5225 5246]))                  
+                :type "void")
+                nil [5205 5247])
+            ("sas_end_device_alloc" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sas_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5294 5312]))                  
+                :type ("sas_rphy" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5249 5313])
+            ("sas_expander_alloc" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sas_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5357 5375])
+                    ("" variable (:type ("sas_device_type" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [5376 5397]))                  
+                :type ("sas_rphy" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5314 5398])
+            ("sas_rphy_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sas_rphy" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5418 5436]))                  
+                :type "void")
+                nil [5399 5437])
+            ("sas_rphy_add" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sas_rphy" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5462 5480]))                  
+                :type "int")
+                nil [5438 5481])
+            ("sas_rphy_remove" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sas_rphy" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5510 5528]))                  
+                :type "void")
+                nil [5482 5529])
+            ("sas_rphy_delete" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sas_rphy" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5558 5576]))                  
+                :type "void")
+                nil [5530 5577])
+            ("sas_rphy_unlink" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sas_rphy" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5606 5624]))                  
+                :type "void")
+                nil [5578 5625])
+            ("scsi_is_sas_rphy" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5654 5676]))                  
+                :type "int")
+                nil [5626 5677])
+            ("sas_port_alloc" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5711 5727])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [5728 5732]))                  
+                :type ("sas_port" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5679 5733])
+            ("sas_port_alloc_num" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5770 5786]))                  
+                :type ("sas_port" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5734 5787])
+            ("sas_port_add" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sas_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5805 5823]))                  
+                :type "int")
+                nil [5788 5824])
+            ("sas_port_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sas_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5844 5862]))                  
+                :type "void")
+                nil [5825 5863])
+            ("sas_port_delete" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sas_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5885 5903]))                  
+                :type "void")
+                nil [5864 5904])
+            ("sas_port_add_phy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sas_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5927 5945])
+                    ("" variable
+                       (:pointer 1
+                        :type ("sas_phy" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5946 5963]))                  
+                :type "void")
+                nil [5905 5964])
+            ("sas_port_delete_phy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sas_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5990 6008])
+                    ("" variable
+                       (:pointer 1
+                        :type ("sas_phy" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6009 6026]))                  
+                :type "void")
+                nil [5965 6027])
+            ("sas_port_mark_backlink" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sas_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6056 6074]))                  
+                :type "void")
+                nil [6028 6075])
+            ("scsi_is_sas_port" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6097 6119]))                  
+                :type "int")
+                nil [6076 6120])
+            ("sas_port_get_phy" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("sas_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6154 6176]))                  
+                :type ("sas_phy" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6121 6177])
+            ("sas_port_put_phy" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("phy" variable
+                       (:pointer 1
+                        :type ("sas_phy" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6214 6234]))                  
+                :type "void")
+                nil [6178 6273])
+            ("sas_attach_transport" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sas_function_template" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6336 6367]))                  
+                :type ("scsi_transport_template" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6275 6368])
+            ("sas_release_transport" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("scsi_transport_template" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6403 6436]))                  
+                :type "void")
+                nil [6369 6437])
+            ("sas_read_port_mode_page" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("scsi_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6466 6487]))                  
+                :type "int")
+                nil [6438 6488])
+            ("scsi_is_sas_expander_device" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6536 6555]))                  
+                :type "int")
+                nil [6490 6776])
+            ("scsi_is_sas_phy_local" variable (:constant-flag t) nil [6786 6807]))          
+    :file "scsi_transport_sas.h"
+    :pointmax 6887
+    :fsize 6886
+    :lastmodtime '(22436 15435 828058 659000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("rphy_to_expander_device" (spp-arg-list ("r") 3539 . 3542) . ((symbol "container_of" 3546 . 3558) (semantic-list "((r), struct sas_expander_device, rphy)" 3558 . 3597)))
+          ("scsi_is_sas_phy_local" (spp-arg-list ("phy") 6807 . 6812) . ((symbol "scsi_is_host_device" 6813 . 6832) (semantic-list "((phy)->dev.parent)" 6832 . 6851)))
+          ("transport_class_to_rphy" (spp-arg-list ("dev") 2491 . 2496) . ((symbol "dev_to_rphy" 2500 . 2511) (semantic-list "((dev)->parent)" 2511 . 2526)))
+          ("SCSI_TRANSPORT_SAS_H")
+          ("dev_to_phy" (spp-arg-list ("d") 2052 . 2055) . ((symbol "container_of" 2059 . 2071) (semantic-list "((d), struct sas_phy, dev)" 2071 . 2097)))
+          ("target_to_rphy" (spp-arg-list ("targ") 2613 . 2619) . ((symbol "dev_to_rphy" 2623 . 2634) (semantic-list "((targ)->dev.parent)" 2634 . 2654)))
+          ("transport_class_to_phy" (spp-arg-list ("dev") 2128 . 2133) . ((symbol "dev_to_phy" 2137 . 2147) (semantic-list "((dev)->parent)" 2147 . 2162)))
+          ("rphy_to_shost" (spp-arg-list ("rphy") 2548 . 2554) . ((symbol "dev_to_shost" 2558 . 2570) (semantic-list "((rphy)->dev.parent)" 2570 . 2590)))
+          ("SAS_EXPANDER_VENDOR_ID_LEN" . ((number "8" 3074 . 3075)))
+          ("SAS_EXPANDER_COMPONENT_VENDOR_ID_LEN" . ((number "8" 3355 . 3356)))
+          ("SAS_EXPANDER_PRODUCT_ID_LEN" . ((number "16" 3162 . 3164)))
+          ("SAS_EXPANDER_PRODUCT_REV_LEN" . ((number "4" 3254 . 3255)))
+          ("phy_to_shost" (spp-arg-list ("phy") 2183 . 2188) . ((symbol "dev_to_shost" 2192 . 2204) (semantic-list "((phy)->dev.parent)" 2204 . 2223)))
+          ("transport_class_to_sas_port" (spp-arg-list ("dev") 3956 . 3961) . ((symbol "dev_to_sas_port" 3965 . 3980) (semantic-list "((dev)->parent)" 3980 . 3995)))
+          ("rphy_to_end_device" (spp-arg-list ("r") 2916 . 2919) . ((symbol "container_of" 2923 . 2935) (semantic-list "((r), struct sas_end_device, rphy)" 2935 . 2969)))
+          ("dev_to_sas_port" (spp-arg-list ("d") 3874 . 3877) . ((symbol "container_of" 3881 . 3893) (semantic-list "((d), struct sas_port, dev)" 3893 . 3920)))
+          ("dev_to_rphy" (spp-arg-list ("d") 2413 . 2416) . ((symbol "container_of" 2420 . 2432) (semantic-list "((d), struct sas_rphy, dev)" 2432 . 2459)))
+          )
+
+    )
+   (semanticdb-table "libsas.h"
+    :file "libsas.h"
+    :fsize 19455
+    :lastmodtime '(22436 15435 812058 646000)
+    )
+   (semanticdb-table "sas_ata.h"
+    :file "sas_ata.h"
+    :fsize 2800
+    :lastmodtime '(22436 15435 816058 650000)
+    )
+   (semanticdb-table "scsi_transport.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SCSI_TRANSPORT_H" variable (:constant-flag t) nil [875 891])
+            ("linux/transport_class.h" include (:system-flag t) nil [893 927])
+            ("linux/blkdev.h" include (:system-flag t) nil [928 953])
+            ("linux/bug.h" include (:system-flag t) nil [954 976])
+            ("scsi/scsi_host.h" include (:system-flag t) nil [977 1004])
+            ("scsi/scsi_device.h" include (:system-flag t) nil [1005 1034])
+            ("scsi_transport_template" type
+               (:members 
+                  ( ("host_attrs" variable (:type ("transport_container" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1102 1140])
+                    ("target_attrs" variable (:type ("transport_container" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1142 1182])
+                    ("device_attrs" variable (:type ("transport_container" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1184 1224])
+                    ("user_scan" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1301 1355])
+                    ("device_size" variable (:type "int") (reparse-symbol classsubparts) [1498 1514])
+                    ("device_private_offset" variable (:type "int") (reparse-symbol classsubparts) [1516 1542])
+                    ("target_size" variable (:type "int") (reparse-symbol classsubparts) [1544 1560])
+                    ("target_private_offset" variable (:type "int") (reparse-symbol classsubparts) [1562 1588])
+                    ("host_size" variable (:type "int") (reparse-symbol classsubparts) [1590 1604])
+                    ("create_work_queue" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [1751 1786])
+                    ("eh_strategy_handler" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1860 1909])
+                    ("eh_timed_out" variable
+                       (:functionpointer-flag t
+                        :type ("blk_eh_timer_return" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2315 2371])
+                    ("it_nexus_response" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2468 2524])
+                    ("tsk_mgmt_response" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2627 2688]))                  
+                :type "struct")
+                nil [1036 2691])
+            ("transport_class_to_shost" variable (:constant-flag t) nil [2701 2725])
+            ("scsi_transport_reserve_target" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("scsi_transport_template" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3090 3125])
+                    ("space" variable (:type "int") (reparse-symbol arg-sub-list) [3126 3136]))                  
+                :type "void")
+                nil [3041 3299])
+            ("scsi_transport_reserve_device" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("scsi_transport_template" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3349 3384])
+                    ("space" variable (:type "int") (reparse-symbol arg-sub-list) [3385 3395]))                  
+                :type "void")
+                nil [3300 3558])
+            ("scsi_transport_target_data" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("starget" variable
+                       (:pointer 1
+                        :type ("scsi_target" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3607 3635]))                  
+                :type "void")
+                nil [3559 3778])
+            ("scsi_transport_device_data" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("sdev" variable
+                       (:pointer 1
+                        :type ("scsi_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3827 3852]))                  
+                :type "void")
+                nil [3779 3971]))          
+    :file "scsi_transport.h"
+    :pointmax 4003
+    :fsize 4002
+    :lastmodtime '(22436 15435 826058 657000)
+    :unmatched-syntax '((ENUM 2310 . 2314) (close-paren 2349 . 2350) (punctuation 2336 . 2337) (open-paren 2335 . 2336) (close-paren 2349 . 2350) (punctuation 2336 . 2337) (open-paren 2335 . 2336))
+    :lexical-table 
+        '(("SCSI_TRANSPORT_H")
+          ("transport_class_to_shost" (spp-arg-list ("tc") 2725 . 2729) . ((symbol "dev_to_shost" 2733 . 2745) (semantic-list "((tc)->parent)" 2745 . 2759)))
+          )
+
+    )
+   (semanticdb-table "scsi_device.h"
+    :file "scsi_device.h"
+    :fsize 20408
+    :lastmodtime '(22436 15435 820058 653000)
+    )
+   (semanticdb-table "sas.h"
+    :file "sas.h"
+    :fsize 13533
+    :lastmodtime '(22436 15435 816058 650000)
+    )
+   )
+  :file "!home!k1jin!linux-stable!include!scsi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

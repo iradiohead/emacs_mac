@@ -1,0 +1,55 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [131 149])
+            ("stdlib.h" include nil nil [150 169])
+            ("MAX_COLS" variable (:constant-flag t) nil [179 187])
+            ("MAX_INPUT" variable (:constant-flag t) nil [199 208])
+            ("read_column_numbers" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("columns" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [239 253])
+                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [254 262]))                  
+                :type "int")
+                nil [215 263])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [274 283])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [284 304]))                  
+                :type "int")
+                nil [265 696])
+            ("read_column_numbers" function
+               (:arguments 
+                  ( ("columns" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [722 736])
+                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [737 745]))                  
+                :type "int")
+                nil [698 1124]))          
+      :file "main.c"
+      :pointmax 1129
+      :fsize 1131
+      :lastmodtime '(22548 21967 0 0)
+      :unmatched-syntax '((number 209 . 213) (number 209 . 213) (number 188 . 190))
+      :lexical-table 
+        '(("MAX_INPUT" . ((number "1000" 209 . 213)))
+          ("MAX_COLS" . ((number "20" 188 . 190)))
+          )
+))
+  :file "!Users!radiohead!Dropbox!SHARE_FOR_VM!C_C++_projects!pointeronc_1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

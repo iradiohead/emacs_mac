@@ -1,0 +1,31 @@
+;; Object helloword/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "helloword/"
+  :tables (list 
+   (semanticdb-table "hello.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "hello.c"
+    :pointmax 1535
+    :fsize 1534
+    :lastmodtime '(22350 40971 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("file_name" . ((string "\"/vagrant_data/helloword/data_g_key.txt\"" 302 . 342)))
+          )
+
+    )
+   (semanticdb-table "hello.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "hello.h"
+    :pointmax 79
+    :fsize 78
+    :lastmodtime '(22349 31073 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!k1jin!Dropbox!SHARE_FOR_VM!C_C++_projects!helloword!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

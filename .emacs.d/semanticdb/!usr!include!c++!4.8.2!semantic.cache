@@ -1,0 +1,39 @@
+;; Object 4.8.2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "4.8.2/"
+  :tables (list 
+   (semanticdb-table "string"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_GLIBCXX_STRING" variable (:constant-flag t) nil [1259 1274])
+            ("bits/c++config.h" include (:system-flag t) nil [1305 1332])
+            ("bits/stringfwd.h" include (:system-flag t) nil [1333 1360])
+            ("bits/char_traits.h" include (:system-flag t) nil [1361 1390])
+            ("bits/allocator.h" include (:system-flag t) nil [1431 1458])
+            ("bits/cpp_type_traits.h" include (:system-flag t) nil [1459 1492])
+            ("bits/localefwd.h" include (:system-flag t) nil [1493 1520])
+            ("bits/ostream_insert.h" include (:system-flag t) nil [1562 1594])
+            ("bits/stl_iterator_base_types.h" include (:system-flag t) nil [1595 1636])
+            ("bits/stl_iterator_base_funcs.h" include (:system-flag t) nil [1637 1678])
+            ("bits/stl_iterator.h" include (:system-flag t) nil [1679 1709])
+            ("bits/stl_function.h" include (:system-flag t) nil [1710 1740])
+            ("ext/numeric_traits.h" include (:system-flag t) nil [1753 1784])
+            ("bits/stl_algobase.h" include (:system-flag t) nil [1786 1816])
+            ("bits/range_access.h" include (:system-flag t) nil [1818 1848])
+            ("bits/basic_string.h" include (:system-flag t) nil [1849 1879])
+            ("bits/basic_string.tcc" include (:system-flag t) nil [1880 1912]))          
+    :file "string"
+    :pointmax 1944
+    :fsize 1943
+    :lastmodtime '(22093 55977 0 0)
+    :unmatched-syntax '((symbol 1290 . 1303) (symbol 1286 . 1289) (symbol 1279 . 1285) (punctuation 1278 . 1279))
+    :lexical-table 
+        '(("_GLIBCXX_STRING" . ((number "1" 1275 . 1276)))
+          )
+
+    )
+   )
+  :file "!usr!include!c++!4.8.2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

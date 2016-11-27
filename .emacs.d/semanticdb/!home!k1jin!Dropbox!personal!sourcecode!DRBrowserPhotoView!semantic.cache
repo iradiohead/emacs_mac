@@ -1,0 +1,40 @@
+;; Object DRBrowserPhotoView/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "DRBrowserPhotoView/"
+  :tables (list 
+   (semanticdb-table "DisplayImage.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "DisplayImage.cpp"
+    :pointmax 11057
+    :fsize 11595
+    :lastmodtime '(20941 11216 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "DisplayImage.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "DisplayImage.h"
+    :pointmax 2020
+    :fsize 2089
+    :lastmodtime '(21219 47765 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("AFX_displayimage_psdr__INCLUDED_")
+          )
+
+    )
+   (semanticdb-table "PVFuntion.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "PVFuntion.h"
+    :pointmax 562
+    :fsize 578
+    :lastmodtime '(18862 15056 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!k1jin!Dropbox!personal!sourcecode!DRBrowserPhotoView!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

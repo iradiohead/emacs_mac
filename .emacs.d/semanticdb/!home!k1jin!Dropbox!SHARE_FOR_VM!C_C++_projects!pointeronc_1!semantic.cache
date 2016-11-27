@@ -1,0 +1,57 @@
+;; Object pointeronc_1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pointeronc_1/"
+  :tables (list 
+   (semanticdb-table "main.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [131 149])
+            ("stdlib.h" include nil nil [150 169])
+            ("MAX_COLS" variable (:constant-flag t) nil [179 187])
+            ("MAX_INPUT" variable (:constant-flag t) nil [199 208])
+            ("read_column_numbers" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("columns" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [239 253])
+                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [254 262]))                  
+                :type "int")
+                nil [215 263])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [274 283])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [284 304]))                  
+                :type "int")
+                nil [265 696])
+            ("read_column_numbers" function
+               (:arguments 
+                  ( ("columns" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [722 736])
+                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [737 745]))                  
+                :type ("Int" type (:type "class") nil nil))
+                nil [698 1133]))          
+    :file "main.c"
+    :pointmax 1138
+    :fsize 1140
+    :lastmodtime '(22429 46774 149937 898000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAX_INPUT" . ((number "1000" 209 . 213)))
+          ("MAX_COLS" . ((number "20" 188 . 190)))
+          )
+
+    )
+   )
+  :file "!home!k1jin!Dropbox!SHARE_FOR_VM!C_C++_projects!pointeronc_1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
